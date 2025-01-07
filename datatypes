@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // let a = 1;
+    // console.log("Hi+ a + a");
+    //     document.write('Hi + a + a' , "<br>");
+    //     console.log(Hi + ${a+a});
+    //     document.write(Hi + ${a+a}, "<br>");
+
+    let a='sai'
+    let b='kumar'
+    let age=30
+    let c= `I am  ${a+b} , my age is ${age} years old`
+    console.log(c)
+    document.write(c)
+
+  </script>
+</body>
+</html>
+
+  Data types:
+1)Dynamic type language
+Two types:
+1)Primitive data type
+2)Non-Primitive data types:Objects,Arrays
+To check the data type- typeof
+
+1)Primitive data type: predefined ; we can store single values
+->1)Numbers:integers,floats
+->2)String : Stream of characters enclosed in quotes
+----single,double,backtick quotes;
+->3)Boolean:true or false
+->4)Null: empty value or no value
+->5)undefined: declared Variable with no value
+
+
+1)Numbers:
+Eg: 1, -1, 4.4
+
+
+2)Strings: Stream of characters enclosed in quotes
+     single,double,backtick quotes;
+    --Back ticks introduced in ES6 version
+    --It provides extra functionality; we can insert 
+
+
+Boolean:True or false
+Eg:(35>=30)->True
+
+
+
+-->Condition:An expression that evaluates the results(true or false)
+Console.log(5>4)
+-->Conditional Statement:To make the set instructions execute only when the conditional is True
+-->Block of code(conditional block):Set of instructions
+    >When this block of code will execute it will execute whrn the specific condition is True
+-->Indentation:{
+    ----block of code
+}
+
