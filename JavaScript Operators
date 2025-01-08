@@ -1,0 +1,68 @@
+JavaScript Operators -
++,-,*
+Multiplication *
+Division /
+Modulus Operator %
+Exponential **
+Increment ++
+Decrement --
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // let a=5
+    // let b=2
+    // a+=40
+    // b-=5
+    // document.write(a,',<br>')
+    // document.write(b,',<br>')
+    // document.write(a+b,',<br>')
+    // document.write(a**b,',<br>')
+    // document.write(a/b,',<br>')
+    // document.write(a%b)
+
+    // let a=5
+    // let b=2
+    // document.write(a,'<br>') //5
+    // document.write(b,'<br>') //2
+    // document.write(a>b && a>2,',<br>') //true
+    // document.write(a>b && a>12,',<br>') //false
+    // document.write(a>b || a>12,',<br>') //true
+    // document.write(!(a>12),',<br>') //true
+
+    // let a = 5;
+    // let b = "5";
+    // document.write(a==b,"<br>"); 
+    // document.write(a===b,"<br>"); 
+    // document.write(a!=b,"<br>"); 
+    // document.write(a!==b,"<br>");
+    
+    // let z=40
+    // let r=(z>10)?"AC off":"AC on"; //AC off
+    // document.write(r);
+
+
+    // alert("Gowtham");
+    // let a = prompt("Enter your name");
+    // alert(`My name is ${a}`);
+
+    let a1= prompt();
+    document.write(a1 , "<br>");
+    document.write(typeof(a1),"<br>");
+    let a2 = prompt();
+    document.write(a1+a2);
+
+
+
+  </script>
+</body>
+</html>
