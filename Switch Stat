@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*
+        let n=prompt("Enter a number: ")
+        switch(true){
+            case n>0:
+            document.write("Number is positive")
+            break;
+            case n<0:
+            document.write("Number is negative")
+            break;
+            case n==0:
+            document.write("Number is zero")
+            break;
+            default:
+            document.write("Invalid input")
+        }
+      */
+    /*  let n=prompt("Enter a day: ")
+        switch(true){
+            case n=="monday":
+            document.write("weekday")
+            break;
+            case n=="tuesday":
+            document.write("weekday")
+            break;
+            case n=="tuesday":
+            document.write("weekday")
+            break;
+            default:
+            document.write("Invalid input")
+        }
+      */
+     /*
+      let a=parseInt(prompt("Enter the number of units: "))
+        switch(true){
+            case a>0 && a<51:
+            let b=  a*2;
+            document.write(b + (b*0.2));
+            break;
+            case a>=51 && a<151:
+            let c = (50*2) +((a-50)*3);
+            document.write(c + (c*0.2));
+            break;
+            case a>150 && a<251:
+            let d=  (50*2)+(100*3)+((a-150)*5);
+            document.write(d + (d*0.2));
+            break;
+            case a>250:
+            let e=  (50*2)+(100*3)+(150*5)+((a-250)*8);
+            document.write(e + (e*0.2));
+            break;
+            default:
+            alert("Invalid input")
+        }
+
+    */
+
+    // let a = parseInt(prompt("Enter the number of units: "), 10);
+
+    //     if (a > 0) {
+    //         let totalBill = 0;
+
+    //         if (a <= 50) {
+    //             totalBill = a * 2;
+    //         } else if (a <= 150) {
+    //             totalBill = (50 * 2) + ((a - 50) * 3);
+    //         } else if (a <= 250) {
+    //             totalBill = (50 * 2) + (100 * 3) + ((a - 150) * 5);
+    //         } else {
+    //             totalBill = (50 * 2) + (100 * 3) + (100 * 5) + ((a - 250) * 8);
+    //         }
+    //         totalBill += totalBill * 0.2;
+
+    //         document.write("Total Bill: " + totalBill);
+    //     } else {
+    //         alert("Invalid input");
+    //     }
+
+    let a = parseInt(prompt("Enter the number of units: "), 10);
+
+        if (a > 0) {
+            let totalBill = 0;
+
+            if (a <= 50) {
+                totalBill = a * 2;
+            } else if (a <= 150) {
+                totalBill = (50 * 2) + ((a - 50) * 3);
+            } else if (a <= 250) {
+                totalBill = (50 * 2) + (100 * 3) + ((a - 150) * 5);
+            } else {
+                totalBill = (50 * 2) + (100 * 3) + (100 * 5) + ((a - 250) * 8);
+            }
+            totalBill += totalBill * 0.2;
+
+            document.write("Total Bill: " + totalBill);
+        } else {
+            alert("Invalid input");
+        }
+
+
+    </script>
+</body>
+</html>
