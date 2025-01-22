@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+        for (let p = 1; p <= 8; p = p + 2) {
+          if (p == 4) {
+            break;
+          }
+          document.write(p);
+        }
+      
+document.write('<br>')
+document.write('<br>')
+
+
+        for(let i=1;i<=3;i++){
+            document.write(i,"<br>")
+            for(let j=1;j<=4;j++){
+                document.write(j," ")
+            }
+            document.write("<br>")
+        }
+document.write('<br>')
+
+// print 
+/* *
+   **
+   ***
+   ****
+   *****
+   print this pattern using loops
+*/
+
+for (let i = 1; i <= 5; i++) {
+  let stars = '';
+  for (let j = 1; j <= i; j++) {
+    stars += '*';
+  }
+  document.write(stars+"<br>");
+}
+
+const n = 5;
+for (let i = 1; i <= n; i++) {
+  let row = '';
+  for (let j = i; j < n; j++) {
+    row += ' ';
+  }
+  for (let k = 1; k <= (2 * i - 1); k++) {
+    row += '*';
+  }
+  document.write(row+'<br>');
+}
+
+for(let i=1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
+
+
+
+
+
+  </script>
+</body>
+</html>
