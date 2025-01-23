@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+// Functions:
+// ->A function is reusable block of code
+// ->It can be call anywhere in the program
+// ----Reusable code:using an existing code with out writing it ever we need
+// -You can use the same code with different arguments to get the results
+
+// JS:
+// Key word = function
+// ( )
+// Parameters=values which are declared inside the ()
+// ->While defining a Functions
+// Arguments:values which are passed through the Parameters
+
+    function greet(){
+      document.write("Hello, Sainath")
+    }
+    greet()
+document.write('<br>')
+
+    function g(name){
+      document.write("Hello, "+name)
+
+    }
+    let name=prompt("enter name")
+    g(name)
+
+    document.write('<br>')
+
+    //add 2 numbers with 2 arguments
+    function add(a, b) {
+      return a + b;
+    }
+
+    let a = Number(prompt("Enter number 1"));
+    let b = Number(prompt("Enter number 2"));
+    alert("The sum is: " + add(a, b));
+//function ret(aa,bb){
+        //    return aa+bb;
+        //}
+        //let n1=parseFloat(prompt("Enter the number1:"))
+        //let n2=parseFloat(prompt("Enter the number2:"))
+        //let result=ret(n1,n2);
+        //document.write("The sum is:"+result)
+
+
+    //anonymous function
+    //a function wihtout name , after we create a fucntion wihtout name and assign it to  a variable
+            sum=function(n1,n2){
+           let r=n1+n2;
+           return r;
+        }
+        document.write(sum(182,234))
+    let sum = function(a, b) {
+      return a + b;
+    }
+
+    
+      
+  </script>
+</body>
+</html>
