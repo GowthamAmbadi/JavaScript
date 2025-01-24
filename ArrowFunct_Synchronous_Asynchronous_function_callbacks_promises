@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+/*  Arrow Functions :
+    ES6 Version
+    more readable and more structure
+    annonymous functions (lambda functions)
+    without function name but they are assigned to a variable
+*/
+    let c=()=>{
+      document.write("Hi,Gowtham")
+    }
+    c()
+document.write('<br>')
+document.write('<br>')
+    // arrow function with parameter 
+    let x=(x,y)=>{
+      document.write(x+y)
+    }
+    x(10,20)
+    document.write('<br>')
+    document.write('<br>')
+
+    //Arrow function with only one argument
+    //without using paranthesis
+
+    let greet=x=>document.write(x);
+    greet("Hello,Gowtham");
+
+    document.write('<br>')
+    document.write('<br>')
+
+    // Arrow function without argument
+    let sayHello=()=>document.write("Hello,Gowtham");
+    sayHello()
+
+    document.write('<br>')
+    document.write('<br>')
+
+    //Arrow functions as an expression (ternary operator)
+
+    let age =16;
+    let welcome = (age<18)?
+    ()=>document.write("You are minor"):
+    ()=>document.write("You are major");
+    welcome(18)
+
+    document.write('<br>')
+    document.write('<br>')
+     
+    //Synchronous and Asynchronous functions
+
+    //Synchronous
+    // step by step 
+    // one task
+
+    function task1(){
+      document.write("Task 1 started" + "<br>")
+    }
+    function task2(){
+      document.write("Task 2 started" + "<br>")
+    }
+    function task3(){
+      document.write("Task 3 started" + "<br>")
+    }
+    task1()
+    task2()
+    task3()
+
+    
+    document.write('<br>')
+
+    //Asynchronous functions
+    //multiple tasks at a time
+
+    document.write("Salaar" + "<br>");
+    setTimeout(()=>{
+      document.write("Raisar" + "<br>");
+    },6000);
+    document.write("Devratha" + "<br>");
+
+    
+    document.write('<br>')
+  
+    // JavaScript CallBacks 
+
+    // A callback function is a function that is passed as a argument to another function
+
+    function greet2(name,callback){
+      document.write("Hello " + name);
+      callback();
+      // this calls the callback function after grerting it will call
+    }
+    function goodbye(){
+      document.write("Goodbye " + name);
+    }
+    // call the greet and pass say goodbye as the call back 
+    greet2("Salaar ",goodbye);
+
+/*    promises
+    1) Pending == still not completed 
+    2) Fullfilled == task completed
+    3) Rejected == the operation is failed
+*/
+
+    let myPromise = new Promise((resolve,reject)=>{
+      { let success = true;
+        if(success){
+          resolve("Task completed");
+        }else{
+          reject("Task failed");
+        }
+      }
+    }
+  )
+  </script>
+</body>
+</html>
