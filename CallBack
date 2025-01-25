@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+/*  
+    callback function
+    you can passs the callback function as a argument to anonther function
+    execution
+    the function receiving the callback will execute the callback at somepoint during the (often at the end or after an asynchronous operation is done)
+    example
+*/
+    function mainfunction(callback){
+      document.write("executing main function"+'<br>');
+      callback();
+      //HERE WE CALL THE CALLBACK FUNCTION
+    }
+    function callbackfunction(){
+      document.write("callback function executed"+'<br>');
+    }
+    mainfunction(callbackfunction)
+/*
+    explanation
+    mainfunction takes parameter callbackfunction
+    callbackfunction is passed as an argument to mainfunction
+    inside the mainfunction the callback funtion
+
+    output--
+    mainfuntion(callbackfuntion)
+    it will execute the code inside the mainfuntion-
+    it will print("executing main function")
+    then it reaches to the calllback(); where it call the function which is passed to mainfunction(callbackfuntion)
+*/
+document.write('<br>')
+
+
+    //example 2
+    //passing a named funtion as callback;
+
+    function greet(name, callback){
+      document.write("greeting "+name+"<br>");
+      callback();
+      //executes the callback funtion after greeting
+    }
+    function goodbye(){
+      document.write("goodbye"+'<br>');
+    }
+    greet("batman", goodbye);
+
+    document.write('<br>')
+
+/*  
+    example 3
+    using an anonymous function as a callback
+    anonymous function as a callback
+*/
+    function greet(name, callback){
+      document.write("greeting "+name+"<br>");
+      callback();
+      //executes the callback funtion after greeting
+    }
+    greet("Batman",function(){
+      document.write("imbatman"+'<br>');
+    })
+
+    document.write('<br>')
+
+/*  
+    we dint pass a named function like (goodbye);
+    instead of that we defined an anonymous function directly wuth in the greet funtion call
+*/
+
+    //example 4
+    //asynchronous callback with settimeout
+
+    function fetchData(callback){
+      document.write("fetching data....."+'<br>')
+      setTimeout(function(){
+        document.write("Data Fetched"+'<br>');
+        callback();
+        
+      },2000)
+    }
+
+    function processData(){
+      document.write("processing data....."+'<br>')
+    }
+    fetchData(processData);
+
+    document.write('<br>')
+
+    //example 5
+    //using callback with arrays method(map)
+
+    const numbers = [1,2,3,4,5];
+    const doubleNumbers = numbers.map(function(num){
+      return num*2;
+      })
+      document.write(doubleNumbers)
+
+    // map() is a built in array method that callback functionto process each item in array
+    // the call back here doubles each number and will retuurn new aray with doubled values
+    document.write('<br>')
+
+    //user registartion secenariod based:
+    //example 6
+    //using callback with user registration scenario
+    function registerUser(username,callback){
+      document.write("checking username....."+'<br>')
+      setTimeout(function(){
+        if(username.length>5){
+          document.write("username is valid"+'<br>')
+          callback(true);
+          } 
+        },2000)
+      }
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
