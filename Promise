@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+/*  
+    Promise :
+    A promise is a special js object that represents the eventual completion (or failure) of an asynchronous operation.
+    It allows to handle asynchronous tasks more efficiently than callbacks
+
+    Three States :
+    1) Pending-  the intial state the promise is still waniting for the operation to finish 
+    2) Fulfilled- the operation is completed 
+    3) Rejected- the operation failed
+
+    Ex :
+    1) To create a promise use  method - new Promise() 
+    Two Parameters -
+    Resolve - To mark the promise as successfully
+    Reject - To mark the promise as failed
+    2) Handling the Result -
+    .then() method is called when promise is fullfilled
+    It will receives the result from resolve()
+    .catch() method is called when promise is rejected
+    receives the error message from the reject()
+*/
+
+   // Example1 :
+   // Creating a promise
+   let promise = new Promise((resolve, reject) => {
+    let success = true;
+    if(success){
+      resolve("The operation is successfull");
+      }else{
+        reject("The operation is failed");
+      }
+      });
+      // Handling the result
+      promise.then((result) => {
+        document.write(result);
+      })
+      .catch((error) => {
+        document.write(error);
+      })
+
+      document.write('<br>')
+      document.write('<br>')
+
+      // Ex :
+      // Chaining Promises
+      let promise1 = new Promise((resolve,reject) =>{
+            resolve(5);
+        })
+        promise1.then(result =>{
+            document.write(result);
+            return result*2;
+            //return a new value
+        })
+        .then(result =>{
+            document.write(result);
+            return result + 3;
+            //return a new value
+        })
+        .then(result =>{
+            document.write(result);
+        })
+        .catch(error =>{
+            document.write("Error ",error);
+        })
+
+
+        // Ex : Promise with setTime out
+        let promise2 = new Promise((resolve,reject) =>{
+          setTimeout(() =>{
+            resolve("suiiiiiiiii");
+            }, 5000);
+            })
+            promise2.then(result =>{
+              document.write(result);
+              })
+              .catch(error =>{
+                document.write("Error ",error);
+                })
+
+
+  </script>
+</body>
+</html>
