@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <h1 id="q">Ramya</h1>
+        <h1 id="r">Ram</h1>
+    </div>
+    <div id="b">
+        <h1>Ravi</h1>
+        <h1>Sam</h1>
+    </div>
+    <script>
+/*      let n=document.createElement("h2")
+        n.textContent="Rahul"
+        insert the new element before the element with id "r"
+        let p=document.getElementById("a")
+        console.log(p.innerText)
+        let l=document.getElementById("r")
+        p.insertBefore(n , l)
+        console.log(p.innerText)
+*/
+
+/* DOM :
+    1) Create a new element (single,multiple)
+    2) append a element inside the parent code
+        add the element at the end 
+    3) InsertBefore(): insert a new node before an existing node or child node of a specific parent code
+      -- this requires a reference to n=both the new node and the existing node you want to insert before 
+*/
+    </script>
+</body>
+</html>
